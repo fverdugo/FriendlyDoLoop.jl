@@ -15,18 +15,23 @@ let
     ref_to_value,cell_to_ref)
 
   @test isa(cell_to_values,CellPointToValue)
+
+  @test rank(cell_to_values) == 0
   
   @time begin
     passed = true
-    arr = Float64[]
     for cell in 1:ncells(cell_to_values)
+
+      ic = ischached(cell_to_values,cell)
   
-      val1 = getvalues(cell_to_values,cell,arr)
-      val2 = ref_to_value[cell_to_ref[cell]]
+      vals1 = cell_to_values[cell]
+      vals2 = ref_to_value[cell_to_ref[cell]]
+
+      passed = passed && (vals1 == vals2)
 
       for point in 1:npoints(cell_to_values,cell)
 
-        passed = passed && (val1[point] == val2[point])
+        passed = passed && (vals1[point] == vals2[point])
 
       end
     end
