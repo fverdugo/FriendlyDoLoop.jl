@@ -1,5 +1,5 @@
 module FriendlyDoLoop
 
-greet() = print("Hello World!")
+include("cell_point_to_value.jl")
 
 end # module

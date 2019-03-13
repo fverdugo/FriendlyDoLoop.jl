@@ -3,8 +3,8 @@ uuid = "27afc07a-efc8-5e9e-90c7-696b76f3235e"
 authors = ["fverdugo <fverdugo@cimne.upc.edu>"]
 version = "0.1.0"
 
-[extras]
+[deps]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
-[targets]
-test = ["Test"]
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
