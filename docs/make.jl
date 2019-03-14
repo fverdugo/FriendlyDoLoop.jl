@@ -4,7 +4,7 @@ using FriendlyDoLoop
 
 makedocs(
     sitename = "FriendlyDoLoop",
-    format = :html,
+    format = Documenter.HTML(),
     modules = [FriendlyDoLoop]
 )
 
