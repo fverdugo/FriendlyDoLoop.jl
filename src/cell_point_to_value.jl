@@ -1,7 +1,4 @@
 
-include("precision.jl")
-include("helpers.jl")
-
 """
 Abstract type representing a collection of values defined
 on a set of local points in each of the cells of the mesh.
