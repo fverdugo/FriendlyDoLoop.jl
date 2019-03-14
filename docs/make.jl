@@ -14,3 +14,7 @@ makedocs(
 #=deploydocs(
     repo = "<repository url>"
 )=#
+
+deploydocs(
+    repo = "github.com/fverdugo/FriendlyDoLoop.jl.git",
+)
