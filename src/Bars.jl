@@ -1,4 +1,6 @@
-#module Bars
+@reexport module Bars
+
+using ..Foos
 
 export Bar, greet
 
@@ -9,4 +11,4 @@ end
 
 greet(bar::Bar) = phrase(bar.foo) * bar.name
 
-#end # module
+end # module

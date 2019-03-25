@@ -1,4 +1,4 @@
-#module Foos
+@reexport module Foos
 
 export Foo, phrase, EnglishFoo, GermanFoo
 
@@ -14,4 +14,4 @@ struct GermanFoo <: Foo end
 
 phrase(::GermanFoo) = "Guten Tag! Ich bin "
 
-#end # module
+end # module
