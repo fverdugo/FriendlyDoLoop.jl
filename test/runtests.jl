@@ -1,15 +1,11 @@
 using FriendlyDoLoop
 using Test
 
+@testset "FriendlyDoLoop" begin
 
-@time @testset "cell_point_to_value.jl" begin
-include("test_cell_point_to_value.jl") end
+  include("FoosTests.jl")
+  
+  include("BarsTests.jl")
 
-@time @testset "cell_point_to_s_value.jl" begin
-include("test_cell_point_to_s_value.jl") end
+end
 
-@time @testset "cell_point_to_value.jl" begin
-include("test_cell_point_to_value.jl") end
-
-@time @testset "cell_point_to_s_value.jl" begin
-include("test_cell_point_to_s_value.jl") end
